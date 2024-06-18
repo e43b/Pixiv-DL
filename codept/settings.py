@@ -82,7 +82,7 @@ def configurar_sistema_download():
             sleep(2)
             continue
 
-        salvar_configuracoes(configuracoes, 'config.json')
+        salvar_configuracoes(configuracoes, 'code/config.json')
 
 # Função principal que controla o fluxo do programa
 def main():

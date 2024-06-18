@@ -122,7 +122,7 @@ def process_pixiv_posts(post_urls, config):
 
 # Main function for user interaction
 def main():
-    config = load_config('codeen/code/config.json')
+    config = load_config('code/config.json')
 
     while True:
         pixiv_urls = input("Enter Pixiv link(s) (separated by comma if multiple): ").strip().split(',')

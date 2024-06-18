@@ -4,20 +4,6 @@
 
 Pixiv DL é uma ferramenta versátil projetada para baixar ilustrações, mangás e comics do site Pixiv [Pixiv](https://www.pixiv.net/).
 
-## Funcionalidades
-
-- **Download Individual e em Lote**: Baixe posts individuais ou vários posts sequencialmente inserindo os URLs separados por vírgulas.
-
-![Home](img/home.png)
-  
-- **Opções de Download Personalizáveis**: Configure a ferramenta para baixar:
-  - Arquivos de texto contendo informações do post como ID do post, título, descrição, data do post, tags, ID do perfil do autor, nome do autor e conta do usuário, e links originais das imagens.
-  - Escolha baixar imagens na máxima qualidade disponível, qualidade média ou ambas as versões.
-
-- **Intervalos de Espera Ajustáveis**: Personalize os intervalos de tempo entre os downloads:
-  - Intervalo padrão entre o download de imagens: 1 segundo.
-  - Intervalo padrão entre posts consecutivos: 4 segundos.
- 
 ## Como Usar
 
 1. **Certifique-se de ter o Python instalado em seu sistema.**
@@ -45,6 +31,20 @@ Pixiv DL é uma ferramenta versátil projetada para baixar ilustrações, mangá
     ```
 
 6. **Siga as instruções no menu para escolher o que deseja baixar ou personalizar o programa.**
+
+## Funcionalidades
+
+- **Download Individual e em Lote**: Baixe posts individuais ou vários posts sequencialmente inserindo os URLs separados por vírgulas.
+
+![Home](img/home.png)
+  
+- **Opções de Download Personalizáveis**: Configure a ferramenta para baixar:
+  - Arquivos de texto contendo informações do post como ID do post, título, descrição, data do post, tags, ID do perfil do autor, nome do autor e conta do usuário, e links originais das imagens.
+  - Escolha baixar imagens na máxima qualidade disponível, qualidade média ou ambas as versões.
+
+- **Intervalos de Espera Ajustáveis**: Personalize os intervalos de tempo entre os downloads:
+  - Intervalo padrão entre o download de imagens: 1 segundo.
+  - Intervalo padrão entre posts consecutivos: 4 segundos.
 
 ### Informações do Projeto
 

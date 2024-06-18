@@ -1,4 +1,4 @@
-# Pixiv DL
+# Pixiv DL [![Views](https://hits.sh/github.com/e43bpixivdlbr/hits.svg)](https://github.com/e43b/Anibunker-Downloader/)
 
 ###### [![](img/en.svg) English](README.md) | [![](img/br.png) Português](README-ptbr.md)
 
@@ -46,13 +46,6 @@ Pixiv DL é uma ferramenta versátil projetada para baixar ilustrações, mangá
   - Intervalo padrão entre o download de imagens: 1 segundo.
   - Intervalo padrão entre posts consecutivos: 4 segundos.
 
-### Informações do Projeto
-
-- **Criador**: E43b
-- **GitHub**: [E43b no GitHub](https://github.com/e43b)
-- **Discord**: [Junte-se à comunidade no Discord](https://discord.gg/Q6nQ3vsWTF)
-- **Repositório do Projeto**: [Repositório Pixiv-DL](https://github.com/e43b/Pixiv-DL)
-
 ### Uso
 
 Para usar o Pixiv DL, forneça os URLs dos posts que deseja baixar, separados por vírgulas. Por exemplo:
@@ -67,10 +60,23 @@ Configure as preferências da ferramenta de acordo com suas necessidades, escolh
 
 ![Config](img/config.png)
 
+### Informações do Projeto
+
+- **Criador**: E43b
+- **GitHub**: [E43b no GitHub](https://github.com/e43b)
+- **Discord**: [Junte-se à comunidade no Discord](https://discord.gg/Q6nQ3vsWTF)
+- **Repositório do Projeto**: [Repositório Pixiv-DL](https://github.com/e43b/Pixiv-DL)
+
 ### Suporte
 
 Para dúvidas, feedback ou para se juntar à comunidade, visite o servidor do [Discord](https://discord.gg/Q6nQ3vsWTF) ou explore o [repositório no GitHub](https://github.com/e43b/Pixiv-DL).
 
----
+### Apoie o Projeto
 
-Sinta-se à vontade para personalizar ainda mais este modelo de README.md com base no seu uso específico ou em recursos adicionais do Pixiv DL!
+Se você acha esta ferramenta útil e gostaria de apoiar seu desenvolvimento contínuo, considere fazer uma doação. Sua contribuição ajuda a manter o projeto ativo e a desenvolver novas funcionalidades.
+
+#### Faça uma doação acessando [este link](https://oxapay.com/donate/40874860).
+
+## Contribuições
+
+Este projeto é de código aberto e você é encorajado a contribuir para melhorias e novas funcionalidades. Sinta-se à vontade para enviar sugestões, relatar problemas ou enviar pull requests através do [repositório oficial no GitHub](https://github.com/e43b/Kemono-and-Coomer-Downloader/) ou por meio do nosso [Discord](https://discord.gg/TaPhfXawcE)

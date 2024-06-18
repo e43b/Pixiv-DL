@@ -26,13 +26,8 @@ def verificar_instalar_dependencias():
         from bs4 import BeautifulSoup
         from fake_useragent import UserAgent
     except ImportError:
-        print("Bibliotecas necessárias não encontradas.")
-        choice = input("Deseja instalar as bibliotecas necessárias? (s/n): ").strip().lower()
-        if choice == 's':
-            os.system('pip install -r requirements.txt')
-        else:
-            print("Instalação cancelada. O programa pode não funcionar corretamente.")
-            input("\nPressione Enter para continuar...")
+        print("Instalando bibliotecas necessárias...")
+        os.system('pip install -r requirements.txt')
 
 # Menu principal
 def menu():
@@ -41,7 +36,7 @@ def menu():
     while True:
         limpar_tela()
         print("""
-        
+
  ____  _      _         ____  _     
 |  _ \(_)_  _(_)_   __ |  _ \| |    
 | |_) | \ \/ / \ \ / / | | | | |    

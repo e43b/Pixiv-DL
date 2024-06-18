@@ -36,7 +36,7 @@ def clear_console():
 
 # Function to configure the post download system (option 1)
 def configure_download_system():
-    settings = load_settings('codeen/code/config.json')
+    settings = load_settings('code/config.json')
 
     while True:
         clear_console()
@@ -82,7 +82,7 @@ def configure_download_system():
             sleep(2)
             continue
 
-        save_settings(settings, 'codeen/code/config.json')
+        save_settings(settings, 'code/config.json')
 
 # Main function controlling the program flow
 def main():

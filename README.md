@@ -1,10 +1,42 @@
 # Pixiv DL
 
+###### [![](img/en.svg) English](README.md) | [![](img/br.png) Português](README-ptbr.md)
+
 Pixiv DL é uma ferramenta versátil projetada para baixar ilustrações, mangás e comics do site Pixiv [Pixiv](https://www.pixiv.net/).
+
+## Como Usar
+
+1. **Certifique-se de ter o Python instalado em seu sistema.**
+2. **Clone este repositório:**
+
+    ```sh
+    git clone https://github.com/e43b/Pixiv-DL/
+    ```
+
+3. **Navegue até o diretório do projeto:**
+
+    ```sh
+    cd Pixiv-DL
+    ```
+
+4. **Selecione o idioma desejado:**
+
+    - A pasta `codeen` contém a versão em inglês.
+    - A pasta `codept` contém a versão em português.
+
+5. **Execute o script principal:**
+
+    ```sh
+    python main.py
+    ```
+
+6. **Siga as instruções no menu para escolher o que deseja baixar ou personalizar o programa.**
 
 ### Funcionalidades
 
 - **Download Individual e em Lote**: Baixe posts individuais ou vários posts sequencialmente inserindo os URLs separados por vírgulas.
+
+![Home](img/home.png)
   
 - **Opções de Download Personalizáveis**: Configure a ferramenta para baixar:
   - Arquivos de texto contendo informações do post como ID do post, título, descrição, data do post, tags, ID do perfil do autor, nome do autor e conta do usuário, e links originais das imagens.
@@ -32,6 +64,8 @@ https://www.pixiv.net/en/artworks/118333815, https://www.pixiv.net/en/artworks/1
 ### Configuração
 
 Configure as preferências da ferramenta de acordo com suas necessidades, escolhendo opções de download e períodos de espera.
+
+![Config](img/config.png)
 
 ### Suporte
 

@@ -3,6 +3,7 @@ import requests
 from datetime import datetime
 from fake_useragent import UserAgent
 from time import sleep
+import json
 
 # Função para converter data e hora
 def convert_datetime(datetime_str):
@@ -39,14 +40,14 @@ headers = {
     'Referer': 'https://www.pixiv.net/',
 }
 
-# Variáveis de configuração
-salvar_txt = False  # Defina como False se não desejar salvar o arquivo de texto
-qualidade_imagem = 'ambas'  # Pode ser 'original', 'regular' ou 'ambas'
-cooldown_entre_imagens = 1  # Tempo em segundos entre cada download de imagem
-cooldown_entre_posts = 4  # Tempo em segundos entre cada post
+# Carregar configurações do arquivo JSON
+def load_config(filename):
+    with open(filename, 'r', encoding='utf-8') as f:
+        config = json.load(f)
+    return config
 
 # Função para processar e baixar posts do Pixiv
-def process_pixiv_posts(post_urls):
+def process_pixiv_posts(post_urls, config):
     for url in post_urls:
         illust_id = url.split('/')[-1]
 
@@ -68,7 +69,7 @@ def process_pixiv_posts(post_urls):
             os.makedirs(base_dir, exist_ok=True)
 
             # Salvar informações em um arquivo de texto
-            if salvar_txt:
+            if config['salvar_txt']:
                 info_txt_path = os.path.join(base_dir, 'info.txt')
                 with open(info_txt_path, 'w', encoding='utf-8') as f:
                     f.write(f"ID: {info_body['illustId']}\n")
@@ -89,43 +90,45 @@ def process_pixiv_posts(post_urls):
             # Baixar e salvar imagens
             for index, page in enumerate(pages_data):
                 urls = page['urls']
-                if qualidade_imagem == 'ambas' or qualidade_imagem == 'original':
+                if config['qualidade_imagem'] == 'ambas' or config['qualidade_imagem'] == 'original':
                     image_url = urls['original']
                     image_extension = image_url.split('.')[-1]
                     image_path = os.path.join(base_dir, f'image_{index + 1}_original.{image_extension}')
                     download_image(image_url, image_path, headers)
-                    if salvar_txt:
+                    if config['salvar_txt']:
                         with open(info_txt_path, 'a', encoding='utf-8') as f:
                             f.write(f"\nImagem {index + 1} (Original):\n")
                             f.write(f"  Original: {urls['original']}\n")
-                if qualidade_imagem == 'ambas' or qualidade_imagem == 'regular':
+                if config['qualidade_imagem'] == 'ambas' or config['qualidade_imagem'] == 'regular':
                     image_url = urls['regular']
                     image_extension = image_url.split('.')[-1]
                     image_path = os.path.join(base_dir, f'image_{index + 1}_regular.{image_extension}')
                     download_image(image_url, image_path, headers)
-                    if salvar_txt:
+                    if config['salvar_txt']:
                         with open(info_txt_path, 'a', encoding='utf-8') as f:
                             f.write(f"\nImagem {index + 1} (Regular):\n")
                             f.write(f"  Regular: {urls['regular']}\n")
 
                 # Cooldown entre cada download de imagem
-                sleep(cooldown_entre_imagens)
+                sleep(config['cooldown_entre_imagens'])
 
             print(f"Informações e imagens salvas em: {base_dir}")
 
             # Cooldown entre cada post
-            sleep(cooldown_entre_posts)
+            sleep(config['cooldown_entre_posts'])
 
         except Exception as e:
             print(f"Erro ao processar o post {url}: {e}")
 
 # Função principal para interação com o usuário
 def main():
+    config = load_config('config.json')
+
     while True:
         pixiv_urls = input("Insira o(s) link(s) do Pixiv (separados por vírgula se mais de um): ").strip().split(',')
         pixiv_urls = [url.strip() for url in pixiv_urls]
 
-        process_pixiv_posts(pixiv_urls)
+        process_pixiv_posts(pixiv_urls, config)
 
         choice = input("Deseja baixar outro post do Pixiv? (s/n): ").strip().lower()
         if choice != 's':

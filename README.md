@@ -1,82 +1,82 @@
-# Pixiv DL [![Views](https://hits.sh/github.com/e43bpixivdlbr/hits.svg)](https://github.com/e43b/Anibunker-Downloader/)
+# Pixiv DL [![Views](https://hits.sh/github.com/e43bpixivdlen/hits.svg)](https://github.com/e43b/Anibunker-Downloader/)
 
 ###### [![](img/en.svg) English](README.md) | [![](img/br.png) Português](README-ptbr.md)
 
-Pixiv DL é uma ferramenta versátil projetada para baixar ilustrações, mangás e comics do site Pixiv [Pixiv](https://www.pixiv.net/).
+Pixiv DL is a versatile tool designed to download illustrations, manga, and comics from the Pixiv website [Pixiv](https://www.pixiv.net/).
 
-## Como Usar
+## How to Use
 
-1. **Certifique-se de ter o Python instalado em seu sistema.**
-2. **Clone este repositório:**
+1. **Make sure you have Python installed on your system.**
+2. **Clone this repository:**
 
     ```sh
     git clone https://github.com/e43b/Pixiv-DL/
     ```
 
-3. **Navegue até o diretório do projeto:**
+3. **Navigate to the project directory:**
 
     ```sh
     cd Pixiv-DL
     ```
 
-4. **Selecione o idioma desejado:**
+4. **Select your desired language:**
 
-    - A pasta `codeen` contém a versão em inglês.
-    - A pasta `codept` contém a versão em português.
+    - The `codeen` folder contains the English version.
+    - The `codept` folder contains the Portuguese version.
 
-5. **Execute o script principal:**
+5. **Run the main script:**
 
     ```sh
     python main.py
     ```
 
-6. **Siga as instruções no menu para escolher o que deseja baixar ou personalizar o programa.**
+6. **Follow the instructions in the menu to choose what you want to download or customize the program.**
 
-## Funcionalidades
+## Features
 
-- **Download Individual e em Lote**: Baixe posts individuais ou vários posts sequencialmente inserindo os URLs separados por vírgulas.
+- **Individual and Batch Download**: Download individual posts or multiple posts sequentially by entering URLs separated by commas.
 
 ![Home](img/home.png)
   
-- **Opções de Download Personalizáveis**: Configure a ferramenta para baixar:
-  - Arquivos de texto contendo informações do post como ID do post, título, descrição, data do post, tags, ID do perfil do autor, nome do autor e conta do usuário, e links originais das imagens.
-  - Escolha baixar imagens na máxima qualidade disponível, qualidade média ou ambas as versões.
+- **Customizable Download Options**: Configure the tool to download:
+  - Text files containing post information such as post ID, title, description, post date, tags, author's profile ID, author's name and user account, and original image links.
+  - Choose to download images in maximum available quality, medium quality, or both versions.
 
-- **Intervalos de Espera Ajustáveis**: Personalize os intervalos de tempo entre os downloads:
-  - Intervalo padrão entre o download de imagens: 1 segundo.
-  - Intervalo padrão entre posts consecutivos: 4 segundos.
+- **Adjustable Cooldowns**: Customize the time intervals between downloads:
+  - Default cooldown between image downloads: 1 second.
+  - Default cooldown between consecutive posts: 4 seconds.
 
-### Uso
+### Usage
 
-Para usar o Pixiv DL, forneça os URLs dos posts que deseja baixar, separados por vírgulas. Por exemplo:
+To use Pixiv DL, provide the URLs of the posts you wish to download, separated by commas. For example:
 
 ```
 https://www.pixiv.net/en/artworks/118333815, https://www.pixiv.net/en/artworks/118392690, https://www.pixiv.net/en/artworks/101134236
 ```
 
-### Configuração
+### Configuration
 
-Configure as preferências da ferramenta de acordo com suas necessidades, escolhendo opções de download e períodos de espera.
+Configure the tool's settings to suit your needs through the provided options for download preferences and cooldown periods.
 
 ![Config](img/config.png)
 
-### Informações do Projeto
+### Project Information
 
-- **Criador**: E43b
-- **GitHub**: [E43b no GitHub](https://github.com/e43b)
-- **Discord**: [Junte-se à comunidade no Discord](https://discord.gg/Q6nQ3vsWTF)
-- **Repositório do Projeto**: [Repositório Pixiv-DL](https://github.com/e43b/Pixiv-DL)
+- **Creator**: E43b
+- **GitHub**: [E43b on GitHub](https://github.com/e43b)
+- **Discord**: [Join the community on Discord](https://discord.gg/Q6nQ3vsWTF)
+- **Project Repository**: [Pixiv-DL Repository](https://github.com/e43b/Pixiv-DL)
 
-### Suporte
+### Support
 
-Para dúvidas, feedback ou para se juntar à comunidade, visite o servidor do [Discord](https://discord.gg/Q6nQ3vsWTF) ou explore o [repositório no GitHub](https://github.com/e43b/Pixiv-DL).
+For questions, feedback, or to join the community, visit the [Discord server](https://discord.gg/Q6nQ3vsWTF) or explore the [GitHub repository](https://github.com/e43b/Pixiv-DL).
 
-### Apoie o Projeto
+### Support the Project
 
-Se você acha esta ferramenta útil e gostaria de apoiar seu desenvolvimento contínuo, considere fazer uma doação. Sua contribuição ajuda a manter o projeto ativo e a desenvolver novas funcionalidades.
+If you find this tool useful and would like to support its continued development, consider making a donation. Your contribution helps keep the project active and supports the development of new features.
 
-#### Faça uma doação acessando [este link](https://oxapay.com/donate/40874860).
+#### Donate by visiting [this link](https://oxapay.com/donate/40874860).
 
-## Contribuições
+## Contributions
 
-Este projeto é de código aberto e você é encorajado a contribuir para melhorias e novas funcionalidades. Sinta-se à vontade para enviar sugestões, relatar problemas ou enviar pull requests através do [repositório oficial no GitHub](https://github.com/e43b/Kemono-and-Coomer-Downloader/) ou por meio do nosso [Discord](https://discord.gg/TaPhfXawcE)
+This project is open-source and you are encouraged to contribute to improvements and new features. Feel free to submit suggestions, report issues, or send pull requests through the [official GitHub repository](https://github.com/e43b/Pixiv-DL/) or via our [Discord](https://discord.gg/Q6nQ3vsWTF).

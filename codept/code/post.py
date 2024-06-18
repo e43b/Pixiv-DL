@@ -122,7 +122,7 @@ def process_pixiv_posts(post_urls, config):
 
 # Função principal para interação com o usuário
 def main():
-    config = load_config('config.json')
+    config = load_config('code/config.json')
 
     while True:
         pixiv_urls = input("Insira o(s) link(s) do Pixiv (separados por vírgula se mais de um): ").strip().split(',')

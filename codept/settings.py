@@ -36,7 +36,7 @@ def limpar_console():
 
 # Função para configurar o sistema de baixar posts (opção 1)
 def configurar_sistema_download():
-    configuracoes = carregar_configuracoes('config.json')
+    configuracoes = carregar_configuracoes('code/config.json')
 
     while True:
         limpar_console()

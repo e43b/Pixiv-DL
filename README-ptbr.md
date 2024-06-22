@@ -79,4 +79,4 @@ Se você acha esta ferramenta útil e gostaria de apoiar seu desenvolvimento con
 
 ## Contribuições
 
-Este projeto é de código aberto e você é encorajado a contribuir para melhorias e novas funcionalidades. Sinta-se à vontade para enviar sugestões, relatar problemas ou enviar pull requests através do [repositório oficial no GitHub](https://github.com/e43b/Kemono-and-Coomer-Downloader/) ou por meio do nosso [Discord]([https://discord.gg/TaPhfXawcE](https://discord.gg/Q6nQ3vsWTF))
+Este projeto é de código aberto e você é encorajado a contribuir para melhorias e novas funcionalidades. Sinta-se à vontade para enviar sugestões, relatar problemas ou enviar pull requests através do [repositório oficial no GitHub](https://github.com/e43b/Pixiv-DL) ou por meio do nosso [Discord](https://discord.gg/TaPhfXawcE)
